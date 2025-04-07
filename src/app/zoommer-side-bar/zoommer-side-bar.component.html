@@ -1,0 +1,10 @@
+<div class="main-container">
+  <div class="sideBar-Box">
+    <ul class="sideNav" *ngIf="sideBarList.length < 15">
+      <li *ngFor="let nav of sideBarList">
+        <img src="{{ nav.img }}" />
+        {{ nav.name }}
+      </li>
+    </ul>
+  </div>
+</div>

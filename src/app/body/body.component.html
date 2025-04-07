@@ -1,0 +1,13 @@
+<div class="boxOne">
+  <p class="forNumbers">Current Number is: {{ changeNumber }}</p>
+  <div class="forButtons">
+    <button class="myBtn1" (click)="forDecreace(changeNumber)">-1</button>
+    <button class="myBtn2" (click)="forIncreace(changeNumber)">+1</button>
+    <button (click)="reset()">Reset</button>
+  </div>
+  <div class="forInput">
+    <input type="text" [(ngModel)]="newStr" placeholder="Input Your Text Here..."/>
+    <p class="inputShow">{{ newStr }}</p>
+    <button (click)="clear()">Clear Text</button>
+  </div>
+</div>
