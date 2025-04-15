@@ -14,7 +14,7 @@ export class ZoommerHeaderComponent {
     { aboutList: 'Trade In' },
     { aboutList: 'ფილიალები' },
   ];
-  // listTracker(list){
-  //   return list.aboutList
-  // }
+  listTracker(list) {
+    return list.aboutList;
+  }
 }

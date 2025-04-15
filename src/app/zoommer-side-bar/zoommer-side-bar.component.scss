@@ -3,6 +3,8 @@
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;
+  display: flex;
+  gap: 100px;
   .sideBar-Box {
     width: 246px;
     min-height: 340px;
@@ -24,11 +26,18 @@
           width: 23px;
           height: auto;
         }
-        &:hover{
+        &:hover {
           background: #f2f2f2;
           border-radius: 12px;
         }
       }
     }
+  }
+}
+.checkPhoto {
+  max-width: 1200px;
+  margin: 0 auto;
+  p{
+    text-align: center;
   }
 }

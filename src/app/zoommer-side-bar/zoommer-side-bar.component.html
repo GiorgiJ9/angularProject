@@ -1,10 +1,17 @@
 <div class="main-container">
   <div class="sideBar-Box">
-    <ul class="sideNav" *ngIf="sideBarList.length < 15">
-      <li *ngFor="let nav of sideBarList">
-        <img src="{{ nav.img }}" />
-        {{ nav.name }}
+    <ul class="sideNav">
+      <li *ngFor="let list of sideBarList" (click)="renderImg(list)">
+        <img [src]="list.iconUrl" alt="" />
+        <p>{{ list.name }}</p>
       </li>
     </ul>
   </div>
+  <app-side-bar-details
+  [imageData]="forRenderImg"
+  (emitImgUrl)="listenToEmit($event)">
+  </app-side-bar-details>
+</div>
+<div class="checkPhoto">
+  <p>This Object Has Photo - {{hasPhoto}}</p>
 </div>

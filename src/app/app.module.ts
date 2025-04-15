@@ -9,6 +9,10 @@ import { HeaderComponent } from './header/header.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { ZoommerHeaderComponent } from './zoommer-header/zoommer-header.component';
 import { ZoommerSideBarComponent } from './zoommer-side-bar/zoommer-side-bar.component';
+import { UserDetailsComponent } from './user-list/user-details/user-details.component';
+import { SideBarDetailsComponent } from './zoommer-side-bar/side-bar-details/side-bar-details.component';
+import { ForCarsComponent } from './for-cars/for-cars.component';
+import { ForCarsDetailsComponent } from './for-cars/for-cars-details/for-cars-details.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +22,10 @@ import { ZoommerSideBarComponent } from './zoommer-side-bar/zoommer-side-bar.com
     UserListComponent,
     ZoommerHeaderComponent,
     ZoommerSideBarComponent,
+    UserDetailsComponent,
+    SideBarDetailsComponent,
+    ForCarsComponent,
+    ForCarsDetailsComponent,
   ],
   imports: [
     BrowserModule,

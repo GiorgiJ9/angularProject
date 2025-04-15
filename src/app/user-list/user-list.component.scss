@@ -1,4 +1,7 @@
-.user-container{
-    margin-top: 20px;
-    margin-left: 20px;
+.user-wrapper{
+    display: flex;
+    .user-container{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
